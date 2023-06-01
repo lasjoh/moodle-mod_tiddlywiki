@@ -1,3 +1,5 @@
+attention at the moment this crashes the moodle admin console with this errermessage: Exception - Call to a member function addElement() on null
+
 This repository started as a clone of moodles Resource module. 
 ( https://github.com/moodle/moodle/tree/master/mod/resource which is one of the successors to original 'file' type plugin of Resource module.)
 It is the intention to develop an activity-plugin with the capacity to save changes made the Tiddlywiki by a modified version of the TiddlyWiki store php.
