@@ -79,7 +79,7 @@ $string['modulename_help'] = 'The Tiddlywiki module enables a teacher to provide
 
 A TiddlyWiki may be used
 * To share content given in class
-* To include a mini website as a coursebook;
+* To include a mini website as a coursebook';
 $string['modulename_link'] = 'mod/tiddlywiki/view';
 $string['modulenameplural'] = 'Wikis';
 $string['notmigrated'] = 'This legacy tiddlywiki type ({$a}) was not yet migrated, sorry.';
