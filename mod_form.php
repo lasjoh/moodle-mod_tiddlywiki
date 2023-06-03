@@ -27,9 +27,9 @@ class mod_tiddlywiki_mod_form extends moodleform {
 
         $mform->addElement('textarea', 'wikitext', get_string('tiddlywikitext', 'mod_tiddlywiki'), array('cols' => '50', 'rows' => '15'));
         $mform->setType('wikitext', PARAM_RAW);
-
-        $this->standard_coursemodule_elements();
-
+/**
+ *       $this->standard_coursemodule_elements();
+*/
         $this->add_action_buttons();
     }
 
