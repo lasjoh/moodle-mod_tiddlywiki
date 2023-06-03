@@ -47,11 +47,11 @@ class mod_tiddlywiki_mod_form extends moodleform {
             $default_values['wikitext'] = $this->_instance->wikitext;
         }
     }
-    
+    /* ___________________________This functions are not defined yet!!
     public function definition_after_data() {
         $this->add_action_cancel(false, get_string('cancel'));
     }
-    
+    */
     public function get_data() {
         $data = parent::get_data();
         if ($data) {
