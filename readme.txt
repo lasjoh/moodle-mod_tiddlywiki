@@ -1,4 +1,7 @@
-attention at the moment this crashes the moodle admin console with this errermessage: Exception - Call to a member function addElement() on null
+!!!! attention at the moment this crashes the moodle admin console with this 
+errormessages: 
+Exception - Call to a member function addElement() on null (after the installation of the addon)
+Call to undefined method mod_tiddlywiki_mod_form::standard_coursemodule_elements() (when trying to add a the acitivity in the course-module)
 
 This repository started as a clone of moodles Resource module. 
 ( https://github.com/moodle/moodle/tree/master/mod/resource which is one of the successors to original 'file' type plugin of Resource module.)
