@@ -24,7 +24,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2023042400;       // The current module version (Date: YYYYMMDDXX).
-$plugin->requires  = 2020041800;    // Requires this Moodle version.
-$plugin->component = 'mod_tiddlywiki'; // Full name of the plugin (used for diagnostics)
-$plugin->cron      = 0;
+$plugin->component = 'mod_tiddlywiki';
+$plugin->release = '0.1.0';
+$plugin->version = 2023060700;
+$plugin->requires = 2018051700;
+$plugin->maturity = MATURITY_ALPHA;
+
