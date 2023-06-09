@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die;
 
 require_once("$CFG->libdir/filelib.php");
-require_once("$CFG->libdir/tiddlywikilib.php");
+require_once("$CFG->libdir/resource.php");
 require_once("$CFG->dirroot/mod/tiddlywiki/lib.php");
 
 /**
@@ -72,7 +72,7 @@ function tiddlywiki_display_embed($tiddlywiki, $cm, $course, $file) {
     $mimetype = $file->get_mimetype();
     $title    = $tiddlywiki->name;
 
-    $extension = tiddlywikilib_get_extension($file->get_filename());
+    $extension = resourcelib_get_extension($file->get_filename());
 
     $mediamanager = core_media_manager::instance($PAGE);
     $embedoptions = array(
@@ -81,11 +81,11 @@ function tiddlywiki_display_embed($tiddlywiki, $cm, $course, $file) {
     );
 
     if (file_mimetype_in_typegroup($mimetype, 'web_image')) {  // It's an image
-        $code = tiddlywikilib_embed_image($moodleurl->out(), $title);
+        $code = resourcelib_embed_image($moodleurl->out(), $title);
 
     } else if ($mimetype === 'application/pdf') {
         // PDF document
-        $code = tiddlywikilib_embed_pdf($moodleurl->out(), $title, $clicktoopen);
+        $code = resourcelib_embed_pdf($moodleurl->out(), $title, $clicktoopen);
 
     } else if ($mediamanager->can_embed_url($moodleurl, $embedoptions)) {
         // Media (audio/video) file.
@@ -96,7 +96,7 @@ function tiddlywiki_display_embed($tiddlywiki, $cm, $course, $file) {
         $moodleurl->param('embed', 1);
 
         // anything else - just try object tag enlarged as much as possible
-        $code = tiddlywikilib_embed_general($moodleurl, $title, $clicktoopen, $mimetype);
+        $code = resourcelib_embed_general($moodleurl, $title, $clicktoopen, $mimetype);
     }
 
     // Let the module handle the display.
