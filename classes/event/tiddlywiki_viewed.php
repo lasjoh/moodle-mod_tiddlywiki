@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The mod_tiddlywiki course module viewed event.
+ * Plugin event classes are defined here.
  *
- * @package    mod_tiddlywiki
- * @copyright  2014 Rajesh Taneja <rajesh@moodle.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mod_tiddlywiki
+ * @copyright   2023 Jan Johannpeter <jan@szen.io>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace mod_tiddlywiki\event;
@@ -27,27 +27,15 @@ namespace mod_tiddlywiki\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * The mod_tiddlywiki course module viewed event class.
+ * The tiddlywiki_viewed event class.
  *
  * @package    mod_tiddlywiki
- * @since      Moodle 2.7
- * @copyright  2014 Rajesh Taneja <rajesh@moodle.com>
+ * @copyright  2023 Jan Johannpeter <jan@szen.io>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class course_module_viewed extends \core\event\course_module_viewed {
+class tiddlywiki_viewed extends course_module_viewed {
 
-    /**
-     * Init method.
-     *
-     * @return void
-     */
-    protected function init() {
-        $this->data['objecttable'] = 'tiddlywiki';
-        $this->data['crud'] = 'r';
-        $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
-    }
+    // For more information about the Events API, please visit:
+    // https://docs.moodle.org/dev/Event_2
 
-    public static function get_objectid_mapping() {
-        return array('db' => 'tiddlywiki', 'restore' => 'tiddlywiki');
-    }
 }

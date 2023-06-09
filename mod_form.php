@@ -27,11 +27,7 @@ class mod_tiddlywiki_mod_form extends moodleform {
 
         $mform->addElement('textarea', 'wikitext', get_string('tiddlywikitext', 'mod_tiddlywiki'), array('cols' => '50', 'rows' => '15'));
         $mform->setType('wikitext', PARAM_RAW);
-/* ___________________________This functions are not defined yet!!
-        $this->standard_coursemodule_elements();
 
-        $this->add_action_buttons();
- */
     }
 
     public function validation($data, $files) {
@@ -47,11 +43,7 @@ class mod_tiddlywiki_mod_form extends moodleform {
             $default_values['wikitext'] = $this->_instance->wikitext;
         }
     }
-    /* ___________________________This functions are not defined yet!!
-    public function definition_after_data() {
-        $this->add_action_cancel(false, get_string('cancel'));
-    }
-    */
+
     public function get_data() {
         $data = parent::get_data();
         if ($data) {

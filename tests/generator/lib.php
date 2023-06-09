@@ -48,7 +48,7 @@ class mod_tiddlywiki_generator extends testing_module_generator {
      */
     public function create_instance($record = null, array $options = null) {
         global $CFG, $USER;
-        require_once($CFG->dirroot . '/lib/tiddlywikilib.php');
+        require_once($CFG->dirroot . '/lib/resourcelib.php');
         // Ensure the record can be modified without affecting calling code.
         $record = (object)(array)$record;
 

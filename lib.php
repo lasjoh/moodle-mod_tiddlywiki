@@ -94,7 +94,7 @@ function tiddlywiki_get_post_actions() {
  */
 function tiddlywiki_add_instance($data, $mform) {
     global $CFG, $DB;
-    require_once("$CFG->libdir/tiddlywikilib.php");
+    require_once("$CFG->libdir/resourcelib.php");
     require_once("$CFG->dirroot/mod/tiddlywiki/locallib.php");
     $cmid = $data->coursemodule;
     $data->timemodified = time();
@@ -121,7 +121,7 @@ function tiddlywiki_add_instance($data, $mform) {
  */
 function tiddlywiki_update_instance($data, $mform) {
     global $CFG, $DB;
-    require_once("$CFG->libdir/tiddlywikilib.php");
+    require_once("$CFG->libdir/resourcelib.php");
     $data->timemodified = time();
     $data->id           = $data->instance;
     $data->revision++;
@@ -358,7 +358,7 @@ function tiddlywiki_get_file_info($browser, $areas, $course, $cm, $context, $fil
  */
 function tiddlywiki_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array()) {
     global $CFG, $DB;
-    require_once("$CFG->libdir/tiddlywikilib.php");
+    require_once("$CFG->libdir/resourcelib.php");
 
     if ($context->contextlevel != CONTEXT_MODULE) {
         return false;
@@ -396,7 +396,7 @@ function tiddlywiki_pluginfile($course, $cm, $context, $filearea, $args, $forced
             if ($tiddlywiki->legacyfiles != RESOURCELIB_LEGACYFILES_ACTIVE) {
                 return false;
             }
-            if (!$file = tiddlywikilib_try_file_migration('/'.$relativepath, $cm->id, $cm->course, 'mod_tiddlywiki', 'content', 0)) {
+            if (!$file = resourcelib_try_file_migration('/'.$relativepath, $cm->id, $cm->course, 'mod_tiddlywiki', 'content', 0)) {
                 return false;
             }
             // file migrate - update flag

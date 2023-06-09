@@ -15,16 +15,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Resource module version information
+ * Plugin version and other meta-data are defined here.
  *
- * @package    mod_tiddlywiki
- * @copyright  2009 Petr Skoda  {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mod_tiddlywiki
+ * @copyright   2023 Jan Johannpeter <jan@szen.io>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2023042400;       // The current module version (Date: YYYYMMDDXX).
-$plugin->requires  = 2020041800;    // Requires this Moodle version.
-$plugin->component = 'mod_tiddlywiki'; // Full name of the plugin (used for diagnostics)
-$plugin->cron      = 0;
+$plugin->component = 'mod_tiddlywiki';
+$plugin->release = '0.1.0';
+$plugin->version = 2023060700;
+$plugin->requires = 2018051700;
+$plugin->maturity = MATURITY_ALPHA;
