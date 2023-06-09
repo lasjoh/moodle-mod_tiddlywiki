@@ -42,12 +42,12 @@ class course_module_viewed extends \core\event\course_module_viewed {
      * @return void
      */
     protected function init() {
-        $this->data['objecttable'] = 'resource';
+        $this->data['objecttable'] = 'tiddlywiki';
         $this->data['crud'] = 'r';
         $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
     }
 
     public static function get_objectid_mapping() {
-        return array('db' => 'resource', 'restore' => 'resource');
+        return array('db' => 'tiddlywiki', 'restore' => 'tiddlywiki');
     }
 }
