@@ -45,6 +45,8 @@ TODO:
  * store the uploaded TW in the DB
  * set the last updated db.record the main file
  * implement clean backups
+ * settings to allow normal users uploading and seting the main File.
  --------------------------
+ * modify the Iframe to optionally add the username to the URL
  * implement json reciever in the moodle-plugin
  * implement media-hosting rtrieving files to show in the Wiki with a media.php
