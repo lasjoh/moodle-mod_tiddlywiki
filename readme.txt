@@ -39,9 +39,12 @@ grep libdir/resourcelib.php > dirroot/mod/tiddlywiki/twlib.php
 gerp resource > tiddlywiki
 replace pix and lang/en/tiddlywiki
 
-TODO:
- * add a modified version od store.php
- * get it to work with the db
+TODO: 
+ * add a modified version of store.php
+ * get it to work with the db: 
+ * store the uploaded TW in the DB
+ * set the last updated db.record the main file
  * implement clean backups
- * implement json reciever
- * implement media-hosting
+ --------------------------
+ * implement json reciever in the moodle-plugin
+ * implement media-hosting rtrieving files to show in the Wiki with a media.php
