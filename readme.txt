@@ -6,7 +6,7 @@
 ⠀⢸⡇⠀⠀⠙⠛⠿⠿⢿⣿⠟⠁⠐⢿⣿⣿⣿⣿⡿⠛⠉⠉⠙⢿⣿⣿⣿⡆
  ⢸⡇ ⠀⠀⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀ ⢿⣿⣿⣿⠁⠀⠀⠀⠀⠀⣿⣿⣿⣿⠀
        ⣿ |\__/,|   (`\ ⣿⣿⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿
-       _.|o o  |_   ) )⣿⣿⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿
+       _.|o o  }_   ) )⣿⣿⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿
     ---(((---(((-----------------⣿⣿⣿⣿
 
 This file is an activityplugin 
@@ -34,10 +34,14 @@ This plugin was started by JanJoh https://talk.tiddlywiki.org/u/janjo/summary
 Tiddlywiki activity module is made starting from a clone to of the "Resource module."
 
 Clone the ressource module
-Add a clone of
-
+Add a clone of libdir/resourcelib.php to the directory rename it twlib.php.
+grep libdir/resourcelib.php > dirroot/mod/tiddlywiki/twlib.php
+gerp resource > tiddlywiki
+replace pix and lang/en/tiddlywiki
 
 TODO:
- * reimplement portfolio support (MDL-20079)
- * new backup/restore and old restore migration (MDL-20081)
- * reimplement tiddlywiki name filter as part of more general activitynames filter (MDL-20083)
+ * add a modified version od store.php
+ * get it to work with the db
+ * implement clean backups
+ * implement json reciever
+ * implement media-hosting
