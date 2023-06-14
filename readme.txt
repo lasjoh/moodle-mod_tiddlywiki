@@ -29,6 +29,8 @@ along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 The original Code is copyright 2009 by Petr Skoda (http://skodak.org)
 This plugin was started by JanJoh https://talk.tiddlywiki.org/u/janjo/summary
 
+This plugin will work with the Tiddlyspot saver pointing to ../../../../../mod/tiddlywiki/store.php
+
 =============
 
 Tiddlywiki activity module is made starting from a clone to of the "Resource module."
