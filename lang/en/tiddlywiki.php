@@ -83,15 +83,16 @@ $string['legacyfilesactive'] = 'Active';
 $string['legacyfilesdone'] = 'Finished';
 $string['modifieddate'] = 'Modified {$a}';
 $string['modulename'] = 'TiddlyWiki';
-$string['modulename_help'] = 'With this module, xou can integrate a  <a href="https://tiddlywiki.com/">Tiddlyiki</a>, <br>
-that can serve as coursebook ans as a non-linear notebook for organising and sharing complex information. It can be contained in the form of a single HTML file that includes CSS, JavaScript, embedded files such as images, and the text content. It is designed to be easy to customize and reshape. 
-It may be used as a flexible coursebook.<br>
-Where possible, the Wiki will be displayed within the course interface with th option to save changes made; otherwise students will be prompted to download it.
+$string['modulename_help'] = 'With this module, you can integrate a  <a href="https://tiddlywiki.com/">Tiddlyiki</a>, <br>
+that can serve as coursebook, as a non-linear notebook and for organising and sharing complex information. It can be contained in the form of a single HTML file that includes CSS, JavaScript, embedded files such as images, and the text content. It is designed to be easy to customize and reshape. 
+<br>
+So far you can download it to save the changes made, und upload it again to update it. We are working on intergating it into the Moodle DB to enable you making changes.
+The aim is to create a system that allows you to cooperate with the students in the Wiki. So stay tuned.
 ';
 $string['modulename_link'] = 'mod/tiddlywiki/view';
 $string['modulenameplural'] = 'Wikis';
 $string['notmigrated'] = 'This legacy tiddlywiki type ({$a}) was not yet migrated, sorry.';
-$string['optionsheader'] = 'Display options';
+$string['optionsheader'] = 'Display options';,
 $string['page-mod-tiddlywiki-x'] = 'Any TiddlyWiki module page';
 $string['pluginadministration'] = 'TiddlyWiki module administration';
 $string['pluginname'] = 'TiddlyWiki';
