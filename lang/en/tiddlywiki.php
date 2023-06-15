@@ -83,11 +83,11 @@ $string['legacyfilesactive'] = 'Active';
 $string['legacyfilesdone'] = 'Finished';
 $string['modifieddate'] = 'Modified {$a}';
 $string['modulename'] = 'TiddlyWiki';
-$string['modulename_help'] = 'The Tiddlywiki module enables a teacher to provide a Tiddlywikis. Where possible, the Wiki will be displayed within the course interface; otherwise students will be prompted to download it..
-
-A TiddlyWiki may be used
-* To share content given in class
-* To include a mini website as a coursebook';
+$string['modulename_help'] = 'With this module, xou can integrate a  <a href="https://tiddlywiki.com/">Tiddlyiki</a>, <br>
+that can serve as coursebook ans as a non-linear notebook for organising and sharing complex information. It can be contained in the form of a single HTML file that includes CSS, JavaScript, embedded files such as images, and the text content. It is designed to be easy to customize and reshape. 
+It may be used as a flexible coursebook.<br>
+Where possible, the Wiki will be displayed within the course interface with th option to save changes made; otherwise students will be prompted to download it.
+';
 $string['modulename_link'] = 'mod/tiddlywiki/view';
 $string['modulenameplural'] = 'Wikis';
 $string['notmigrated'] = 'This legacy tiddlywiki type ({$a}) was not yet migrated, sorry.';
