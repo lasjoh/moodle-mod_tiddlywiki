@@ -18,18 +18,20 @@ them under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Moodle is distributed in the hope that it will be useful,
+As Moodle, this plugin is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-The original Code is copyright 2009 by Petr Skoda (http://skodak.org)
+The Code this plugin was built on is copyright 2009 by Petr Skoda (http://skodak.org)
 This plugin was started by JanJoh https://talk.tiddlywiki.org/u/janjo/summary
 
 This plugin will work with the Tiddlyspot saver pointing to ../../../../../mod/tiddlywiki/store.php
+because it saves from an IFrame, it needs its URL and other settings to save. 
+These will be set automatically by a moodle-plugin $:/plugins/JJ/Moodle 
+which is part and can be loaded form the TiddlyWiki Classroom-suite.
 
 =============
 
