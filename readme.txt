@@ -48,10 +48,10 @@ TODO:
  * upload TW in filedir
  * updated the record in the mdl_files DB to point to the contenthash of the new record (and thus show it as new file)
  * create a new record for the old content as backupcopy
---------------------------< We are here !
- * implement clean backups
+--------------------------< We are here 
+ * implement clean backups to reduce the backups to a reasonable number and delete records and blobs ins filedir.
 -----------------------_--< alpha-release-point
- * settings to allow normal users uploading and seting the main File
- * modify the Iframe to optionally add the username to the URL
+ * settings to allow normal users uploading and setting the main File
+ * modify the Iframe to optionally add the username to the URL in the view.php
  * implement json reciever in the moodle-plugin
  * implement media-hosting retrieving files to show in the Wiki with a media.php
