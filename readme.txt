@@ -42,15 +42,16 @@ Add a clone of libdir/resourcelib.php to the directory rename it twlib.php.
 grep libdir/resourcelib.php > dirroot/mod/tiddlywiki/twlib.php
 gerp resource > tiddlywiki
 replace pix and lang/en/tiddlywiki
-
 TODO: 
  * add a modified version of store.php
  * get it to work with the db: 
- * store the uploaded TW in the DB
- * set the last updated db.record the main file
+ * upload TW in filedir
+ * updated the record in the mdl_files DB to point to the contenthash of the new record (and thus show it as new file)
+ * create a new record for the old content as backupcopy
+--------------------------< We are here !
  * implement clean backups
- * settings to allow normal users uploading and seting the main File.
- --------------------------
+-----------------------_--< alpha-release-point
+ * settings to allow normal users uploading and seting the main File
  * modify the Iframe to optionally add the username to the URL
  * implement json reciever in the moodle-plugin
- * implement media-hosting rtrieving files to show in the Wiki with a media.php
+ * implement media-hosting retrieving files to show in the Wiki with a media.php
