@@ -50,7 +50,7 @@ ROADMAP:
  * intergrate the moodle ROles and capabilities (hardcoded at the moment - should become part of the settings)
  * upload TW in filedir
  * updated the record in the mdl_files DB to point to the contenthash of the new record (and thus show it as new file)
-* implement a function to delete the deprecated blobs from filedir
+* implement a function to automatically delete the deprecated TWs from filedir
 --------------------------< We are here 
  * create a new record for the old content as backupcopy
  * implement clean backups to reduce the backups to a reasonable number and delete records and blobs ins filedir.
