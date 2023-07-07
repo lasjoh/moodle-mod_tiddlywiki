@@ -33,7 +33,7 @@ This plugin was started by JanJoh https://talk.tiddlywiki.org/u/janjo/summary
 This plugin will work with the Tiddlyspot saver pointing to ../../../../../mod/tiddlywiki/store.php
 because it saves from an IFrame, it needs its URL and other settings to save. 
 These will be set automatically by a moodle-plugin $:/plugins/JJ/Moodle 
-which is part and can be loaded form the TiddlyWiki Classroom-suite.
+which is part and can be loaded from the TiddlyWiki Classroom-suite.
 
 =============
 
@@ -47,7 +47,7 @@ replace pix and lang/en/tiddlywiki
 ROADMAP: 
  * add a modified version of store.php
  * get it to work with the db:
- * intergrate the moodle ROles and capabilities (hardcoded at the moment - should become part of the settings)
+ * intergrate the moodle roles and capabilities (hardcoded at the moment - should become part of the settings)
  * upload TW in filedir
  * updated the record in the mdl_files DB to point to the contenthash of the new record (and thus show it as new file)
 * implement a function to automatically delete the deprecated TWs from filedir
@@ -59,3 +59,4 @@ ROADMAP:
  * modify the Iframe to optionally add the username to the URL in the view.php
  * implement json reciever in the moodle-plugin
  * implement media-hosting retrieving files to show in the Wiki with a media.php
+ * ...
