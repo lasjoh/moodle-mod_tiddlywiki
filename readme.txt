@@ -1,4 +1,4 @@
-Attention: At the moment this Repo contains the listDBs.php which is usefull for debugging purposes - but should not be installed on moodles in Production, because it givies an overview over all DBs and their content!
+Attention: At the moment this Repo contains the listDBs.php which is usefull for debugging purposes - but should not be installed on moodles in Production, because it can give an overview over all DBs and their content!
 
 
 ⠀⠀⠀⠀ ⠀⢀⣤⣤⣴⣶⣶⣶⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
