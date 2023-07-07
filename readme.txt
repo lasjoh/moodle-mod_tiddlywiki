@@ -46,7 +46,8 @@ gerp resource > tiddlywiki
 replace pix and lang/en/tiddlywiki
 ROADMAP: 
  * add a modified version of store.php
- * get it to work with the db: 
+ * get it to work with the db:
+ * intergrate the moodle ROles and capabilities (hardcoded at the moment - should become part of the settings)
  * upload TW in filedir
  * updated the record in the mdl_files DB to point to the contenthash of the new record (and thus show it as new file)
 * implement a function to delete the deprecated blobs from filedir
